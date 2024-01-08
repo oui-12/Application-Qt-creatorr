@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QDialog" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label_menu">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Statue : ++</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>711</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">backround: white</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideLeft</enum>
+   </property>
+   <widget class="QWidget" name="tab_Etudiant">
+    <attribute name="title">
+     <string>Étudiant</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>271</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white</string>
+     </property>
+     <property name="title">
+      <string>Cordonnées</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>CNE  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_CNE">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Nom </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Nom"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Prénom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_prenom"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Date de naissance‎</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateTimeEdit" name="DN">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="wrapping">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::PlusMinus</enum>
+            </property>
+            <property name="accelerated">
+             <bool>false</bool>
+            </property>
+            <property name="showGroupSeparator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="displayFormat">
+             <string>dd/MM/yyyy </string>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>334</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QPushButton" name="pushButton_ajouter">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_modifier">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:black;
+background-color:white;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Modifier</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_supprimer">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_afficher">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:black;
+background-color:white;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Afficher </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>271</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Etudiant</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>20</y>
+       <width>341</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../../th (3).jpeg</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Matiere">
+    <attribute name="title">
+     <string>Matière </string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>271</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white</string>
+     </property>
+     <property name="title">
+      <string>Ajouter Matiere</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>id</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Id">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_NameMatiere_2">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QPushButton" name="pushButton_ajouter_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_supprimer_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:black;
+background-color:white;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_afficher_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Afficher </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>271</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../../th (4).jpeg</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Professeur</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>261</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white</string>
+     </property>
+     <property name="title">
+      <string>Ajouter Professeur</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>id</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Id_Prof_2">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>user name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_userName_prof_3">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Password_Prof_5">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <widget class="QPushButton" name="pushButton_ajouter_3">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_supprimer_3">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:black;
+background-color:white;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_afficher_3">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border:none;
+color:white;
+background-color:pink;
+font: 100 10pt “Arial”;
+border-radius:20px solid;
+}
+QPushButton:Hover
+{
+background-color:gold;
+border-radius:20px;
+border-radius:30px;
+
+}
+QPushButton:Hover:pressed
+{
+background-color:green;
+color:blue
+border-bottom:10px solid black;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Afficher </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_Picture">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>271</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: url(:/Ressourses/Picture/12.png)</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>410</y>
+     <width>1071</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
